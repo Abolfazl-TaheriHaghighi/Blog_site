@@ -55,7 +55,7 @@ https://templatemo.com/tm-551-stand-blog
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
+                        <a class="nav-link" href="">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
@@ -75,16 +75,26 @@ https://templatemo.com/tm-551-stand-blog
                     <li class="nav-item">
                         {% if request.user.is_authenticated %}
                             <div>
-                                <a class="nav-link" href="">{{ request.user.first_name }}</a>
-                                <a href="/logout">
+                                {% if request.user.first_name %}
+
+                                    <a class="nav-link" href="">{{ request.user.first_name }}</a>
+
+                                {% else %}
+
+                                    <a class="nav-link" href="">{{ request.user.username }}</a>
+
+                                {% endif %}
+                                <a href="{% url 'account:logout' %}">
                                     <spain class="badge badge-danger">logout</spain>
                                 </a>
                             </div>
+
+
                         {% else %}
-                                <a class="nav-link" href="/login">Login</a>
-                              <li class="nav-item">
-                        <a class="nav-link" href="/register">Register</a>
-                    </li>
+                            <a class="nav-link" href="{% url 'account:login' %}">Login</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'account:register' %}">Register</a>
+                            </li>
                         {% endif %}
                     </li>
 
