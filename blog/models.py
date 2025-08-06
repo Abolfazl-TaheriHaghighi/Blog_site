@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils import timezone
+
 
 class Post (models.Model):
 
@@ -9,6 +11,7 @@ class Post (models.Model):
     image = models.ImageField(upload_to= 'images/post')
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+    pub_date = models.DateField(default=timezone.now())
 
 
     def __str__(self):
