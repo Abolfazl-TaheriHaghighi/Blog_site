@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'Blog_site.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'testcci_db',             # اسم دیتابیسی که ساختی
+        'NAME': 'testyheg_db',             # اسم دیتابیسی که ساختی
         'USER': 'root',             # یوزر دیتابیس
-        'PASSWORD': 'aQDvaue$3jUIbWx6D3Bg',      # رمز عبور
-        'HOST': 'test-rlb-service',           # غالباً localhost یا آدرس سرور
+        'PASSWORD': 'zPq!t6E2XwwIEd8uiXZp',      # رمز عبور
+        'HOST': 'testy-twb-service',           # غالباً localhost یا آدرس سرور
         'PORT': '3306',                # پورت MySQL (3306 پیش‌فرض)
     }
 }
