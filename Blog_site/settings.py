@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-jjj13!@^9)nls*y=$47$ae^!a^)pm7fwx#7b6b+8y-@d0acu_u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['first-project.runflare.run']
+ALLOWED_HOSTS = ['first-projects.runflare.run']
 
 # Application definition
 
@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'Blog_site.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'testuah_db',             # اسم دیتابیسی که ساختی
+        'NAME': 'testcci_db',             # اسم دیتابیسی که ساختی
         'USER': 'root',             # یوزر دیتابیس
-        'PASSWORD': 'qb!ggmAXiusP52MOQP2d',      # رمز عبور
-        'HOST': 'test-qwi-service',           # غالباً localhost یا آدرس سرور
+        'PASSWORD': 'aQDvaue$3jUIbWx6D3Bg',      # رمز عبور
+        'HOST': 'test-rlb-service',           # غالباً localhost یا آدرس سرور
         'PORT': '3306',                # پورت MySQL (3306 پیش‌فرض)
     }
 }
