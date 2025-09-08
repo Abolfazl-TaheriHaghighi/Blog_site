@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-jjj13!@^9)nls*y=$47$ae^!a^)pm7fwx#7b6b+8y-@d0acu_u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['first-project.runflare.run']
 
 # Application definition
 
