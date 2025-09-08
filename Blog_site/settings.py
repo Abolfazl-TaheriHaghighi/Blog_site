@@ -82,8 +82,12 @@ WSGI_APPLICATION = 'Blog_site.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'testuah_db',             # اسم دیتابیسی که ساختی
+        'USER': 'root',             # یوزر دیتابیس
+        'PASSWORD': 'qb!ggmAXiusP52MOQP2d',      # رمز عبور
+        'HOST': 'test-qwi-service',           # غالباً localhost یا آدرس سرور
+        'PORT': '3306',                # پورت MySQL (3306 پیش‌فرض)
     }
 }
 
