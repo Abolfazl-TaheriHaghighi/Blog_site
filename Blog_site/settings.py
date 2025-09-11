@@ -24,14 +24,13 @@ SECRET_KEY = 'django-insecure-jjj13!@^9)nls*y=$47$ae^!a^)pm7fwx#7b6b+8y-@d0acu_u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['test-blog.runflare.run']
+ALLOWED_HOSTS = ["test-blog.runflare.run", "www.test-blog.runflare.run"]
+CSRF_TRUSTED_ORIGINS = ["https://test-blog.runflare.run", "https://www.test-blog.runflare.run"]
 
-CSRF_TRUSTED_ORIGINS = ["https://test-blog.runflare.run"]
-
-SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = False
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_PROXY_SSL_HEADER = ('X-Forwarded-Proto', 'https')
 # Application definition
 
 INSTALLED_APPS = [
