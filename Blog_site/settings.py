@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-jjj13!@^9)nls*y=$47$ae^!a^)pm7fwx#7b6b+8y-@d0acu_u
 DEBUG = False
 
 ALLOWED_HOSTS = ['first-projects.runflare.run']
+CSRF_TRUSTED_ORIGINS = ['https://first-projects.runflare.run']
 
 # Application definition
 
