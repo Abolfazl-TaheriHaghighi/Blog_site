@@ -24,9 +24,9 @@ SECRET_KEY = 'django-insecure-jjj13!@^9)nls*y=$47$ae^!a^)pm7fwx#7b6b+8y-@d0acu_u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['first-projects.runflare.run']
+ALLOWED_HOSTS = ['test-blog.runflare.run']
 
-CSRF_TRUSTED_ORIGINS = ["https://first-projects.runflare.run"]
+CSRF_TRUSTED_ORIGINS = ["https://test-blog.runflare.run"]
 
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
@@ -88,10 +88,10 @@ WSGI_APPLICATION = 'Blog_site.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'testyheg_db',             # اسم دیتابیسی که ساختی
+        'NAME': 'testtodm_db',             # اسم دیتابیسی که ساختی
         'USER': 'root',             # یوزر دیتابیس
-        'PASSWORD': 'zPq!t6E2XwwIEd8uiXZp',      # رمز عبور
-        'HOST': 'testy-twb-service',           # غالباً localhost یا آدرس سرور
+        'PASSWORD': 'hwokIEbZ3log33$WMHBl',      # رمز عبور
+        'HOST': 'testt-ega-service',           # غالباً localhost یا آدرس سرور
         'PORT': '3306',                # پورت MySQL (3306 پیش‌فرض)
     }
 }
